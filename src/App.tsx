@@ -18,7 +18,7 @@ class App extends React.Component<Props, State> {
     super(props);
     this.state = {
       robotData: [
-        { id: 1, name: "Robuta-travel", href: "https://daiwang-lei.github.io/Robuta-Travel/build/index.html#/",  introduction: "基于React的旅游网站" },
+        { id: 1, name: "Robuta-travel", href: "https://daiwang-lei.github.io/Robuta-Travel",  introduction: "基于React的旅游网站" },
         { id: 2, name: "Robuta-Design", href: "https://daiwang-lei.github.io/robutaDesign/storybook-static", introduction: "NPM上架的React组件库" },
         { id: 3, name: "Robuta-Dumi-Document", href: "https://daiwang-lei.github.io/dumiDoc/docs-dist",introduction: "基于Dumi的个人博客" },
       ],
