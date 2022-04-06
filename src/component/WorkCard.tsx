@@ -7,10 +7,11 @@ export interface WorkProps {
   name: string;
   introduction: string;
   href: string;
+  src:string
 }
 
 const WorkCard: FC<WorkProps> = (props) => {
-  const { id, name, introduction, href, ...restProps } = props;
+  const { id, name, introduction, href,src, ...restProps } = props;
   const addToCart = useAddToCart();
   // hook 的useContext方式
   const value = useContext(appContext);
@@ -25,7 +26,7 @@ const WorkCard: FC<WorkProps> = (props) => {
         }
       }}
     >
-      <img src={`https://robohash.org/${id}`} alt="" />
+      <img src={src} alt="" style={{maxWidth:'19vw'}} />
       <h2>{name}</h2>
       <p>{introduction}</p>
       <p>author: {value.authorName}</p>

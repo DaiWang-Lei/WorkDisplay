@@ -1,5 +1,7 @@
 .app {
   text-align: center;
+  background-color:  #cad3c3;
+  /* #cad3c3 */
 }
 
 .appHeader {
@@ -7,7 +9,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 36px;
   margin-bottom: 24px;
 }
 
